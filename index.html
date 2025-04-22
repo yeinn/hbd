@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday 🎸</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/tone@next/build/Tone.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button id="changeNameBtn" style="display: none">✏️친구변경</button>
+      <div class="entry-screen" id="entry">
+        <div class="entry-inner">
+          <p>🎇 오늘 <span id="date-display"></span>은 누구의 생일?!</p>
+          <input type="text" id="nameInput" placeholder="이름을 입력하세요" />
+          <button id="startBtn">입장하기</button>
+        </div>
+      </div>
+
+      <h1>🎉 Happy Birthday! 🎉</h1>
+      <h2>사랑하는 <span class="friend-name">???</span>을 위한 연주를 시작해주세요🎵</h2>
+      <div class="guitar-layout">
+        <div class="guitar-light"></div>
+
+        <div class="guitar-body">
+          <div class="sound-hole"></div>
+        </div>
+
+        <div class="guitar-wrapper">
+          <div class="guitar">
+            <div class="string" data-note="C4"></div>
+            <div class="string" data-note="D4"></div>
+            <div class="string" data-note="E4"></div>
+            <div class="string" data-note="F4"></div>
+            <div class="string" data-note="G4"></div>
+            <div class="string" data-note="A4"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ending-message" id="ending">
+        <div class="inner">
+          <p>🎉 생일 축하한다, <span class="friend-name">???</span> 🎉</p>
+          <button id="restartBtn">다시 연주하기</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
